@@ -7,6 +7,4 @@ def index(request):
     return HttpResponse(getattr(settings, 'MESSAGE', '!!! EMPTY !!!'))
 
 
-urlpatterns = (
-    url(r'^$', index),
-)
+urlpatterns = url(r'^$', index),
